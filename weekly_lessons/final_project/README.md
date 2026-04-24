@@ -1,3 +1,3 @@
-# My Project
+# Astronomer's Respite
 
-Write an introduction or document your project here. Be sure to _rename the main folder_ when you duplicate this for use in your own projects!
+For astronomers looking for a quiet place to recharge, simply sit and watch the countless stars in the sky twinkle. For those who are bored, tap on the stars to witness their brilliance, or drag them around to form constellations. 
