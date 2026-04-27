@@ -14,11 +14,10 @@ DM2008- Programming for Interaction
 | [week_03](./weekly_lessons/week_03/) | Arrays and Functions |
 | [week_04](./weekly_lessons/week_04/) | Object-Oriented Programming (Part 1) |
 | [week_05](./weekly_lessons/week_05/) | Object-Oriented Programming (Part 2) |
-| [week_06](./weekly_lessons/week_06/) | Media Loading |
-| [week_07](./weekly_lessons/week_07/) | Local Tooling (Student Repo Template) |
 | [week_08](./weekly_lessons/week_08/) | Arduino Basics |
 | [week_09](./weekly_lessons/week_09/) | Sensor to Screen (Sensor Jam Template) |
 | [week_10](./weekly_lessons/week_10/) | Interface Design |
+| [week_11](./weekly_lessons/final_project/) | Astronomer's Respite |
 
 ---
 
