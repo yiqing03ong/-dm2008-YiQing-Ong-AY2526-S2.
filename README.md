@@ -8,16 +8,16 @@
 
 | Folder | Focus |
 |---------|--------|
-| `week_01` | Introduction to Creative Coding and p5.js |
-| `week_02` | Conditionals and Loops |
-| `week_03` | Arrays and Functions |
-| `week_04` | Object-Oriented Programming (Part 1) |
-| `week_05` | Object-Oriented Programming (Part 2) |
-| `week_06` | Media Loading |
-| `week_07` | Local Tooling (Student Repo Template) |
-| `week_08` | Arduino Basics |
-| `week_09` | Sensor to Screen (Sensor Jam Template) |
-| `week_10` | Interface Design |
+| [week_01](./week_01/) | Introduction to Creative Coding and p5.js |
+| [week_02](./week_02/) | Conditionals and Loops |
+| [week_03](./week_03/) | Arrays and Functions |
+| [week_04](./week_04/) | Object-Oriented Programming (Part 1) |
+| [week_05](./week_05/) | Object-Oriented Programming (Part 2) |
+| [week_06](./week_06/) | Media Loading |
+| [week_07](./week_07/) | Local Tooling (Student Repo Template) |
+| [week_08](./week_08/) | Arduino Basics |
+| [week_09](./week_09/) | Sensor to Screen (Sensor Jam Template) |
+| [week_10](./week_10/) | Interface Design |
 
 ---
 
