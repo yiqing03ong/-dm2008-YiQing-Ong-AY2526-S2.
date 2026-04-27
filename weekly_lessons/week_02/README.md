@@ -4,9 +4,10 @@
 
 ### 📕 Week 2 Assignments
 
-| [activity_2a](./weekly_lessons/week_02/activity_2a/) | Mode Switch |  
+| [activity_2a](./activity_2a/) | Mode Switch |  
 
-| [activity_2b](./weekly_lessons/week_02/activity_2b/) | Pattern Making
+| [activity_2b](./activity_2b/) | Pattern Making
+
 ---
 
 ## 👾 Activity 2A👾
