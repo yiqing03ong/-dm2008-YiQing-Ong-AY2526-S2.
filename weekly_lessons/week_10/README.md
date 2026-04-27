@@ -7,6 +7,7 @@
 | Folder | Focus |
 |---------|--------|
 | [activity_10](./activity_10/) |  Control Center |
+
 ---
 
 ## 👾 Activity 10👾
