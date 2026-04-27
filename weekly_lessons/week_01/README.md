@@ -6,7 +6,7 @@
 
 | Folder | Focus |
 |---------|--------|
-| [activity_1a](<a href="activity_1a/">Activity 1A</a>) | Simple Creatures |
+| <a href="https://editor.p5js.org/yiqing03ong/sketches/9im-Morzk">Go to Sketch</a> | Simple Creatures |
 | [activity_1b](./activity_1b/) | Georg Nees |
 
 ---
