@@ -14,7 +14,11 @@ I drew an octopus under the sea, trying to be as illustrative as possible. I mad
  
 Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/9im-Morzk
 
+## ⏮️Previous Assignment⏮️
+[Last Week](../week_09/)
 
+## ⏭️Next Assignment⏭️
+[Next Week](../week_11/)
 
 ## 🏡Back to Main Page🏠 
 
