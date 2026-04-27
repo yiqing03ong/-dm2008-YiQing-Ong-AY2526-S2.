@@ -26,6 +26,12 @@ For this activity, I heavily relied on the given example sketch. Some main chang
 
 Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/ves86Ke9a
 
+## ⏮️Previous Assignment⏮️
+[Last Week](../week_02/)
+
+## ⏭️Next Assignment⏭️
+[Next Week](../week_04/)
+
 ## 🏡Back to Main Page🏠 
 
 [Home](../../)

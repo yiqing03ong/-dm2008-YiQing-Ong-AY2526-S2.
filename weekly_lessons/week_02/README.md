@@ -22,6 +22,12 @@ I also introduced randomness in the fill colors for certain shapes to create var
 
 Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/cTgQUsGbg
 
+## ⏮️Previous Assignment⏮️
+[Last Week](../week_01/)
+
+## ⏭️Next Assignment⏭️
+[Next Week](../week_03/)
+
 ## 🏡Back to Main Page🏠 
 
 [Home](../../)

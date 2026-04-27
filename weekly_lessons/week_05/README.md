@@ -1,25 +1,30 @@
-# Week 1
+# Week 5
 
 ---
 
-### 📕 Week 1 Assignments
+### 📕 Week 5 Assignments
 
 | Folder | Focus |
 |---------|--------|
-| [activity_1a](./weekly_lessons/week_01/activity_1a/) | Simple Creatures |
-| [activity_1b](./weekly_lessons/week_01/activity_1b/) | Georg Nees |
+| [activity_5a](./weekly_lessons/week_05/activity_5a/) | Colliding Circles |
+| [activity_5b](./weekly_lessons/week_05/mini_project-pong/) | Pong Tennis |
 ---
 
-## 👾 Activity 1A👾
-I drew an octopus under the sea, trying to be as illustrative as possible. I made use of the p5.js primitives such as arcs, rectangles, polygons and ellipses to make up the general shape of the object I was drawing. I played around with the stroke and fills to create patterns, such as waves and sand. Lastly, I also included a linear gradient in the background to color in the seawater. For this, I consulted a YouTube tutorial by Kazuki Umeda. 
+## 👾 Activity 5A👾
+In this activity, I altered the shape of the balls to be more oblong, as this activity reminded me of the DVD logo that would bounce on our TV screens back in the day. To detect collisions, I calculated the distance between the two ovals' x and y positions, using a stretched ellipse collision box. I then checked if the distance is below a certain threshold to determine if the objects are colliding. If they do collide, both objects turn red. 
 
-Link to tutorial: https://youtu.be/-MUOweQ6wac?si=widYLAImE_FgSBUr  
-Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/9im-Morzk
+Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/4_6VrMwmj
 
-## 👾 Activity 1B👾
-For this exercise, I made minor alterations to the Georg Nees sketch. I aimed for a more contemplative effect, something you can just sit and daydream to. I kept the color scheme black and white, and adjusted the original squares into little dots instead, so it gave a sandglass effect instead. 
+## 👾 Activity 5B👾
+I chose to work on Pong for this project. Player 1 (left side) uses W and S keys to moe their racquet, while Player 2 (right side) uses the up and down arrow keys. I changed the visuals to match a tennis court, and implemented a simple scoring system that loosely matches tennis rules, where the first player to hit 4 points wins. I also included a game mechanic where the velocity of the ball increases with each hit, and only resets after a point is scored. To ensure the game doesn't start before the players are ready, I included a SPACE function to start the game. 
 
-Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/QjZOtwl86
+Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/r9u72e0W6
+
+## ⏮️Previous Assignment⏮️
+[Last Week](../week_04/)
+
+## ⏭️Next Assignment⏭️
+[Next Week](../week_06/)
 
 ## 🏡Back to Main Page🏠 
 
