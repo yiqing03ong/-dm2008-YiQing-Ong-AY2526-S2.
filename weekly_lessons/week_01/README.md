@@ -20,3 +20,6 @@ Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/9im-Morzk
 For this exercise, I made minor alterations to the Georg Nees sketch. I aimed for a more contemplative effect, something you can just sit and daydream to. I kept the color scheme black and white, and adjusted the original squares into little dots instead, so it gave a sandglass effect instead. 
 
 Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/QjZOtwl86
+
+##🏡Back to Main Page🏠##
+[Home](../../)
