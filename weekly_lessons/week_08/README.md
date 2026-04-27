@@ -10,7 +10,7 @@
 | [activity_8b](./weekly_lessons/week_08/activity_8b/) | Sensors |
 ---
 
-ps. I lost the arduino code documentation. 👉👈
+ps. I lost alot of the arduino code and photo documentation. 👉👈
 
 ## 👾 Activity 8A👾
 We just followed the demo code and the circuit map to wire up the sensor to the arduino board. We lowk struggled so much we didn't have time to experiment 💀. 
