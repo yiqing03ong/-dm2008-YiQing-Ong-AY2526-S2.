@@ -4,8 +4,9 @@
 
 ### 📕 Week 1 Assignments
 
-| [activity_1a](./weekly_lessons/week_01/activity_1a/) | Simple Creatures |   
-
+| Folder | Focus |
+|---------|--------|
+| [activity_1a](./weekly_lessons/week_01/activity_1a/) | Simple Creatures |
 | [activity_1b](./weekly_lessons/week_01/activity_1b/) | Georg Nees |
 
 ---
