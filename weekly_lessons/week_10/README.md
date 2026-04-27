@@ -6,7 +6,7 @@
 
 | Folder | Focus |
 |---------|--------|
-| [activity_10](./weekly_lessons/week_10/activity_10/) |  Control Center |
+| [activity_10](./activity_10/) |  Control Center |
 ---
 
 ## 👾 Activity 10👾
