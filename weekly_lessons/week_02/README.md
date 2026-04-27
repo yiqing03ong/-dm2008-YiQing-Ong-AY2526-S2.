@@ -4,8 +4,9 @@
 
 ### 📕 Week 2 Assignments
 
-| [activity_2a](./activity_2a/) | Mode Switch |  
-
+| Folder | Focus |
+|---------|--------|
+| [activity_2a](./activity_2a/) | Mode Switch |
 | [activity_2b](./activity_2b/) | Pattern Making
 
 ---
