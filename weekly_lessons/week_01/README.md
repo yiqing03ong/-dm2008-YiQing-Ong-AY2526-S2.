@@ -22,7 +22,7 @@ For this exercise, I made minor alterations to the Georg Nees sketch. I aimed fo
 Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/QjZOtwl86
 
 ## ⏭️Next Week⏭️
-[week_02](./weekly_lessons/week_02/)
+[week_02](../week_02/)
 
 ## 🏡Back to Main Page🏠 
 
