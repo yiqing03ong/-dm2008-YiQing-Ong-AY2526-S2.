@@ -19,10 +19,10 @@ We just followed the demo code and the circuit map to wire up the sensor to the 
 We also didn't manage to experiment much on this, but we successfully followed the circuit instructions and used the correct code. We found that among all the sensors, the ultrasonic sensor worked the best as it was the most sensitive. 
 
 ## ⏮️Previous Assignment⏮️
-[Last Week](../week_08/)
+[Last Week](../week_07/)
 
 ## ⏭️Next Assignment⏭️
-[Next Week](../week_10/)
+[Next Week](../week_09/)
 
 ## 🏡Back to Main Page🏠 
 
