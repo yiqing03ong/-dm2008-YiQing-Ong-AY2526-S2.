@@ -6,8 +6,8 @@
 
 | Folder | Focus |
 |---------|--------|
-| [activity_8a](./weekly_lessons/week_08/activity_8a/) | Arduino Basics |
-| [activity_8b](./weekly_lessons/week_08/activity_8b/) | Sensors |
+| [activity_8a](./activity_8a/) | Arduino Basics |
+| [activity_8b](./activity_8b/) | Sensors |
 ---
 
 ps. I lost alot of the arduino code and photo documentation. 👉👈
