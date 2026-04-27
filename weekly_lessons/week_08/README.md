@@ -1,25 +1,28 @@
-# Week 1
+# Week 8
 
 ---
 
-### 📕 Week 1 Assignments
+### 📕 Week 8 Assignments
 
 | Folder | Focus |
 |---------|--------|
-| [activity_1a](./weekly_lessons/week_01/activity_1a/) | Simple Creatures |
-| [activity_1b](./weekly_lessons/week_01/activity_1b/) | Georg Nees |
+| [activity_8a](./weekly_lessons/week_08/activity_8a/) | Arduino Basics |
+| [activity_8b](./weekly_lessons/week_08/activity_8b/) | Sensors |
 ---
 
-## 👾 Activity 1A👾
-I drew an octopus under the sea, trying to be as illustrative as possible. I made use of the p5.js primitives such as arcs, rectangles, polygons and ellipses to make up the general shape of the object I was drawing. I played around with the stroke and fills to create patterns, such as waves and sand. Lastly, I also included a linear gradient in the background to color in the seawater. For this, I consulted a YouTube tutorial by Kazuki Umeda. 
+ps. I lost alot of the arduino code and photo documentation. 👉👈
 
-Link to tutorial: https://youtu.be/-MUOweQ6wac?si=widYLAImE_FgSBUr  
-Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/9im-Morzk
+## 👾 Activity 8A👾
+We just followed the demo code and the circuit map to wire up the sensor to the arduino board. We lowk struggled so much we didn't have time to experiment 💀. 
 
-## 👾 Activity 1B👾
-For this exercise, I made minor alterations to the Georg Nees sketch. I aimed for a more contemplative effect, something you can just sit and daydream to. I kept the color scheme black and white, and adjusted the original squares into little dots instead, so it gave a sandglass effect instead. 
+## 👾 Activity 8B👾
+We also didn't manage to experiment much on this, but we successfully followed the circuit instructions and used the correct code. Small wins are still wins! We found that among all the sensors, the ultrasonic sensor worked the best as it was the most sensitive. 
 
-Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/QjZOtwl86
+## ⏮️Previous Assignment⏮️
+[Last Week](../week_05/)
+
+## ⏭️Next Assignment⏭️
+[Next Week](../week_09/)
 
 ## 🏡Back to Main Page🏠 
 
