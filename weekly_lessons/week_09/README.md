@@ -6,8 +6,8 @@
 
 | Folder | Focus |
 |---------|--------|
-| [activity_9a](./weekly_lessons/week_09/activity_9a/) | Mapping Sensors |
-| [activity_9b](./weekly_lessons/week_09/activity_9b/) | Sensor Jam |
+| [activity_9a](./activity_9a/) | Mapping Sensors |
+| [activity_9b](./activity_9b/) | Sensor Jam |
 ---
 
 ## 👾 Activity 9A👾
