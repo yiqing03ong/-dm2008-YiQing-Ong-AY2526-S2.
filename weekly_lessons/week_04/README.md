@@ -6,8 +6,8 @@
 
 | Folder | Focus |
 |---------|--------|
-| [activity_4a](./weekly_lessons/week_04/activity_4a/) | Bake a Cookie |
-| [activity_4b](./weekly_lessons/week_04/activity_4b/) | Objects in Motion |
+| [activity_4a](./activity_4a/) | Bake a Cookie |
+| [activity_4b](./activity_4b/) | Objects in Motion |
 ---
 
 ## 👾 Activity 4A👾
