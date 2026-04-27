@@ -2,9 +2,7 @@
 
 ---
 
-## 📚 Repository Structure
-
-### 📕 Weekly Assignments
+### 📕 Week 1 Assignments
 
 | Folder | Focus |
 |---------|--------|
