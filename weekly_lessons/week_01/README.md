@@ -6,8 +6,8 @@
 
 | Folder | Focus |
 |---------|--------|
-| [activity_1a](.activity_1a/) | Simple Creatures |
-| [activity_1b](.activity_1b/) | Georg Nees |
+| [activity_1a](./activity_1a/) | Simple Creatures |
+| [activity_1b](./activity_1b/) | Georg Nees |
 
 ---
 
