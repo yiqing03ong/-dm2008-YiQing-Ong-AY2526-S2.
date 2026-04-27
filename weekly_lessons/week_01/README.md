@@ -8,6 +8,7 @@
 |---------|--------|
 | [activity_1a](./weekly_lessons/week_01/activity_1a/) | Simple Creatures |
 | [activity_1b](./weekly_lessons/week_01/activity_1b/) | Georg Nees |
+
 ---
 
 ## 👾 Activity 1A👾
