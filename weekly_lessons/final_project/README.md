@@ -3,7 +3,7 @@
 
 | Folder | Focus |
 |---------|--------|
-| <a href="https://editor.p5js.org/yiqing03ong/sketches/kxVnw76br">final_projecy</a> |  Astronomer's Respite |
+| <a href="https://editor.p5js.org/yiqing03ong/sketches/kxVnw76br">final_project</a> |  Astronomer's Respite |
 
 ---
 
