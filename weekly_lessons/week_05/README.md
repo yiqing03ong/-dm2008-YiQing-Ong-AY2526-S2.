@@ -20,6 +20,12 @@ I chose to work on Pong for this project. Player 1 (left side) uses W and S keys
 
 Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/r9u72e0W6
 
+## ⏮️Previous Assignment⏮️
+[Last Week](../week_04/)
+
+## ⏭️Next Assignment⏭️
+[Next Week](../week_06/)
+
 ## 🏡Back to Main Page🏠 
 
 [Home](../../)
