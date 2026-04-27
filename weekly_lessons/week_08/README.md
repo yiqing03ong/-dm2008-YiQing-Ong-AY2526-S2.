@@ -16,7 +16,7 @@ ps. I lost the arduino code documentation. 👉👈
 We just followed the demo code and the circuit map to wire up the sensor to the arduino board. We lowk struggled so much we didn't have time to experiment 💀. 
 
 ## 👾 Activity 8B👾
-We also didn't manage to experiment much on this, but we successfully followed the circuit instructions and used the correct code. We found that among all the sensors, the ultrasonic sensor worked the best as it was the most sensitive. 
+We also didn't manage to experiment much on this, but we successfully followed the circuit instructions and used the correct code. Small wins are still wins! We found that among all the sensors, the ultrasonic sensor worked the best as it was the most sensitive. 
 
 ## ⏮️Previous Assignment⏮️
 [Last Week](../week_05/)
