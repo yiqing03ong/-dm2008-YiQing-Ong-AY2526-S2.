@@ -20,6 +20,12 @@ I created moving agents that have random starting positions, sizes and velocitie
 
 Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/JD6HuK5_n
 
+## ⏮️Previous Assignment⏮️
+[Last Week](../week_03/)
+
+## ⏭️Next Assignment⏭️
+[Next Week](../week_05/)
+
 ## 🏡Back to Main Page🏠 
 
 [Home](../../)
