@@ -6,8 +6,8 @@
 
 | Folder | Focus |
 |---------|--------|
-| <a href="https://editor.p5js.org/yiqing03ong/sketches/9im-Morzk">Go to Sketch</a> | Simple Creatures |
-| [activity_1b](./activity_1b/) | Georg Nees |
+| <a href="https://editor.p5js.org/yiqing03ong/sketches/9im-Morzk">activity_1a</a> | Simple Creatures |
+| <a href="https://editor.p5js.org/yiqing03ong/sketches/QjZOtwl86">activity_1b</a> | Georg Nees |
 
 ---
 
