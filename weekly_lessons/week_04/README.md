@@ -6,8 +6,8 @@
 
 | Folder | Focus |
 |---------|--------|
-| <a href="https://editor.p5js.org/yiqing03ong/sketches/XfjlxEYB3">activity_3a</a> | Bake a Cookie |
-| <a href="https://editor.p5js.org/yiqing03ong/sketches/JD6HuK5_n">activity_3a</a> | Objects in Motion |
+| <a href="https://editor.p5js.org/yiqing03ong/sketches/XfjlxEYB3">activity_4a</a> | Bake a Cookie |
+| <a href="https://editor.p5js.org/yiqing03ong/sketches/JD6HuK5_n">activity_4b</a> | Objects in Motion |
 
 ---
 
