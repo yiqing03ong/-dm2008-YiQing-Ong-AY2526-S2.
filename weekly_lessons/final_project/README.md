@@ -2,6 +2,12 @@
 
 ---
 
+| Folder | Focus |
+|---------|--------|
+| [final_project](./final_project/) |  Control Center |
+
+---
+
 ## ✨Astronomer's Respite🌟
 For my final project, I wanted to create a more contemplative and calm project, where someone can just rest their minds after a tiring day. I wanted this to link to my final year project, which is going to be an interactive graphic novel about a lost jellyfish who is guided back home by the moon and stars. Hence, I thought it would be nice to recreate a scene from my graphic novel.  
 
