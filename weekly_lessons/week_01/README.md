@@ -21,5 +21,6 @@ For this exercise, I made minor alterations to the Georg Nees sketch. I aimed fo
 
 Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/QjZOtwl86
 
-##🏡Back to Main Page🏠##
+## 🏡Back to Main Page🏠 
+
 [Home](../../)
