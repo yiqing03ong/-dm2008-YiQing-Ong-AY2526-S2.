@@ -23,7 +23,7 @@ I also introduced randomness in the fill colors for certain shapes to create var
 Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/cTgQUsGbg
 
 ## ⏭️Next Assignment⏭️
-[Next Week](./weekly_lessons/week_03)
+[Next Week](./weekly_lessons/week_03/)
 
 ## 🏡Back to Main Page🏠 
 
