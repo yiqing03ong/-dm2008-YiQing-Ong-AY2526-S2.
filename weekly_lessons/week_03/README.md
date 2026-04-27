@@ -1,25 +1,30 @@
-# Week 1
+# Week 3
 
 ---
 
-### 📕 Week 1 Assignments
+### 📕 Week 3 Assignments
 
 | Folder | Focus |
 |---------|--------|
-| [activity_1a](./weekly_lessons/week_01/activity_1a/) | Simple Creatures |
-| [activity_1b](./weekly_lessons/week_01/activity_1b/) | Georg Nees |
+| [activity_3a](./weekly_lessons/week_03/activity_3a/) | Array Sampler |
+| [activity_3b](./weekly_lessons/week_03/activity_3b/) | One Function Wonder |
+| [activity_3c](./weekly_lessons/week_03/activity_3c/) | Painting App |
 ---
 
-## 👾 Activity 1A👾
-I drew an octopus under the sea, trying to be as illustrative as possible. I made use of the p5.js primitives such as arcs, rectangles, polygons and ellipses to make up the general shape of the object I was drawing. I played around with the stroke and fills to create patterns, such as waves and sand. Lastly, I also included a linear gradient in the background to color in the seawater. For this, I consulted a YouTube tutorial by Kazuki Umeda. 
+## 👾 Activity 3A👾
+I created a sketch that allows users to generate shapes interactively using mouse clicks, spawning in a shape, either a circle, square or triangle. Each shape also has a random size and color. I did this by creating two arrays: one for shapes and one for my palette. Pressing the “r” key removes the oldest shape from the array, allowing the composition to gradually change over time. I included a translucent background, so when you remove a shape, it has a faded effect, adding more depth to the painting. 
 
-Link to tutorial: https://youtu.be/-MUOweQ6wac?si=widYLAImE_FgSBUr  
 Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/9im-Morzk
 
-## 👾 Activity 1B👾
-For this exercise, I made minor alterations to the Georg Nees sketch. I aimed for a more contemplative effect, something you can just sit and daydream to. I kept the color scheme black and white, and adjusted the original squares into little dots instead, so it gave a sandglass effect instead. 
+## 👾 Activity 3B👾
+For this sketch, I first drew a simple geometric snowflake pattern with two overlapping squares, whereby one of the squares is rotated at a 45 degree angle. Then, I nested for loops to create a grid pattern. I randomised the color and size of the snowflake to create an almost sunburst effect. Lastly, I also let the background color randomise, between a white and gray color, adding to the pulsing effect. 
 
-Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/QjZOtwl86
+Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/4AkQ8s7xV 
+
+## 👾 Activity 3C👾
+For this activity, I heavily relied on the given example sketch. Some main changes I made were mirroring the drawing, allowing the square and triangle brushes to rotate while drawing and including a function to automatically shift the colors white drawing one continuous stroke. To increase visual interest, I also decreased the opacity of the fills of the brush strokes. 
+
+Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/ves86Ke9a
 
 ## 🏡Back to Main Page🏠 
 
