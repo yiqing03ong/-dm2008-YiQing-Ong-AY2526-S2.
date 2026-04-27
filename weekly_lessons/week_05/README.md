@@ -6,8 +6,8 @@
 
 | Folder | Focus |
 |---------|--------|
-| [activity_5a](./weekly_lessons/week_05/activity_5a/) | Colliding Circles |
-| [activity_5b](./weekly_lessons/week_05/mini_project-pong/) | Pong Tennis |
+| [activity_5a](./activity_5a/) | Colliding Circles |
+| [activity_5b](./mini_project-pong/) | Pong Tennis |
 ---
 
 ## 👾 Activity 5A👾
