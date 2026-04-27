@@ -19,6 +19,8 @@ DM2008- Programming for Interaction
 | [week_10](./weekly_lessons/week_10/) | Interface Design |
 | [week_11](./weekly_lessons/final_project/) | Astronomer's Respite |
 
+Images and videos of my assignments can be found on this google drive folder (in case I can't upload to GitHub/ it doesn't look right): https://drive.google.com/drive/folders/1k5Z8LMrh4EQovi-lvoc5sIfdSToWOhVf?usp=share_link 
+
 ---
 
 ## 👾 Reflection 👾
