@@ -18,7 +18,7 @@ Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/9im-Morzk
 [Last Week](../week_09/)
 
 ## ⏭️Next Assignment⏭️
-[Next Week](../week_11/)
+[Next Week](../final_project/)
 
 ## 🏡Back to Main Page🏠 
 
