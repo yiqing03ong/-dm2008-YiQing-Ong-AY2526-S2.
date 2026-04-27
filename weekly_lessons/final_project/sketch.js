@@ -1,25 +1,27 @@
 let stars = [];
-let connections = [];
+let connections = []; //[startStar, endStar]
 
-let draggedStar = null;
-let startStar = null;
+let draggedStar = null; //no star being dragged right now
+let startStar = null; //store star where a connection started 
 
 let clickColors = [
-  [255, 120, 120],
-  [120, 200, 255],
-  [180, 120, 255],
-  [255, 220, 120],
-  [120, 255, 180]
+  [255, 120, 120], //red
+  [120, 200, 255], //light blue
+  [180, 120, 255], //purple
+  [255, 220, 120], //yellow
+  [120, 255, 180] //aqua
 ];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
+  //spawn 150 stars at setup
   for (let i = 0; i < 150; i++) {
     stars.push(new Star(random(width), random(height)));
   }
 }
 
+//detect whether mouse is on top of star 
 function getStarAt(x, y, ignoreStar = null) {
   for (let s of stars) {
     if (s !== ignoreStar && dist(x, y, s.x, s.y) < 6) {
