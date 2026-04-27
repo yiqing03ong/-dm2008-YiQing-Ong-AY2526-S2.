@@ -6,9 +6,9 @@
 
 | Folder | Focus |
 |---------|--------|
-| [activity_3a](./weekly_lessons/week_03/activity_3a/) | Array Sampler |
-| [activity_3b](./weekly_lessons/week_03/activity_3b/) | One Function Wonder |
-| [activity_3c](./weekly_lessons/week_03/activity_3c/) | Painting App |
+| [activity_3a](./activity_3a/) | Array Sampler |
+| [activity_3b](./activity_3b/) | One Function Wonder |
+| [activity_3c](./activity_3c/) | Painting App |
 ---
 
 ## 👾 Activity 3A👾
