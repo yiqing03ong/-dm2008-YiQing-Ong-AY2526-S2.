@@ -1,40 +1,27 @@
-// DM2008 — Activity 4b [Guided]
-// Objects in Motion (50 min)
-//
-// You have a working Agent class to start with — your job is to bring it to life.
-// Each agent moves, changes over time, and is drawn to the screen.
-// Mouse click adds a new agent. C clears them all.
-//
-// Things to try:
-// - Change the starting values (size, speed, color) to see what happens
-// - Make agents bounce instead of wrap — what needs to change?
-// - Add a second method to your class beyond update() and show()
-//
-// Stretch: give each agent a lifespan — shrink or fade it over time, then remove it.
-// Hint: a backward loop lets you safely splice items while iterating.
-
 let agents = [];
-const NUM_START = 12;
+const NUM_START = 100; 
 
 function setup() {
   createCanvas(600, 400);
   noStroke();
-
+  
   for (let i = 0; i < NUM_START; i++) {
     let x = random(width);
     let y = random(height);
     let sz = random(12, 36);
     let speedX = random(-2, 2);
     let speedY = random(-2, 2);
+    // TODO: pass any extra properties you plan to use
     agents.push(new Agent(x, y, sz, speedX, speedY));
   }
 }
 
 function draw() {
-  background(230);
+  background(0, 0, 0, 50);
 
-  for (let i = 0; i < agents.length; i++) {
+  for (let i = agents.length - 1; i >= 0; i--) {
     agents[i].update();
+    agents[i].shrink();
     agents[i].show();
   }
 }
@@ -47,8 +34,7 @@ function mousePressed() {
 }
 
 function keyPressed() {
-  // Replacing the array with an empty one effectively clears all agents
-  if (key === "C") {
+  if (key === "c") {
     agents = [];
   }
 }
@@ -58,21 +44,25 @@ class Agent {
     this.x = x;
     this.y = y;
     this.sz = sz;
+
     this.dx = speedX;
     this.dy = speedY;
-    this.col = random(255); // a color value that will change over time
-    // What else might your agent need to know about itself?
+
+    this.h = random(360);
+    this.a = 200;
+    this.isGrowing = true;
+    this.growth = random(1, 4);
+
+  }
+  
+  shrink()  {
+    this.sz = sin(frameCount * 0.01 * this.growth) * 40;
   }
 
   update() {
-    // Position changes by speed each frame — can you see why?
     this.x += this.dx;
     this.y += this.dy;
 
-    // This is a property changing over time — try changing size or speed instead
-    this.col = (this.col + 1) % 255;
-
-    // This wraps agents around the edges — could you make them bounce instead?
     if (this.x > width) {
       this.x = 0;
     }
@@ -85,11 +75,26 @@ class Agent {
     if (this.y < 0) {
       this.y = height;
     }
+
+    if (this.x < 0 || this.x > width) {
+      this.dx *= -1;
+    }
+    if (this.y < 0 || this.y > height) {
+      this.dy *= -1;
+    }
+
+    this.life -= 1;
+    
+    let d = dist(this.x, this.y, mouseX, mouseY);
+if (d < 80) {
+  let angle = atan2(this.y - mouseY, this.x - mouseX);
+  this.dx += cos(angle) * 0.5;
+  this.dy += sin(angle) * 0.5;
+}
   }
 
   show() {
-    // this.col drives the color shift — how could you use your other properties here?
-    fill(this.col, 150, 220);
+    fill(50 + (this.h % 150), 80, 200, this.a);
     ellipse(this.x, this.y, this.sz);
   }
 }

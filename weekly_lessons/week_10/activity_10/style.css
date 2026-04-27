@@ -5,3 +5,43 @@ html, body {
 canvas {
   display: block;
 }
+
+.colorBtn {
+  font-size: 12px;
+  padding: 10px 16px;
+  background-color: rgb(255,255,255);
+  color: rgb(120, 120, 120);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.hueSlider {
+  -webkit-appearance: none;
+  font-size: 12px;
+  margin: 4px 16px;
+  background-color: rgb(255,255,255);
+  color: rgb(120, 120, 120);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.sizeSlider {
+  font-size: 12px;
+  margin: 4px 16px;
+  background-color: rgb(255,255,255);
+  color: rgb(120, 120, 120);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.shapeSelect {
+  font-size: 12px;
+  margin: 8px 16px;
+  background-color: rgb(255,255,255);
+  color: rgb(120, 120, 120);
+  border: none;
+  cursor: pointer;
+}

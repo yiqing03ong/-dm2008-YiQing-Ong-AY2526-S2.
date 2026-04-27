@@ -1,29 +1,26 @@
-// DM2008 — Activity 3b
-// One Function Wonder (20 min)
-//
-// Write a function that draws a shape or group of shapes.
-// It should take at least one parameter — try x, y, size, or color.
-// Call it several times with different values to create variation.
-//
-// Ideas: a simple face, a flower, a house, an icon.
-// Example: myShape(100, 200, 50); myShape(300, 200, 80);
-//
-// Stretch: call your function inside a for loop to create a repeating pattern.
-
 function setup() {
   createCanvas(400, 400);
   rectMode(CENTER);
 }
 
 function draw() {
-  background(220);
-
-  // Call your function here with different values each time
+  background(random(['#CCCED1', '#787D85']));
+  fill('#D9EAFD');
+  for (let x = 25; x < width; x += 50) {
+  for (let y = 25; y < height; y += 50) {
+    snowflake(x, y, random(20, 40));
+    }
+  }
 }
 
-// Define your function outside draw()
-// It can be called from anywhere in your sketch
-
-function myShape(x, y, s) {
-  ellipse(x, y, s, s);
+function snowflake(x, y, size){
+  fill(random(['#D9EAFD', '#75A8E0', '#C9D2DB']));
+  noStroke();
+  rect(x, y, size); 
+  
+  push();
+  translate(x, y);
+  rotate(radians(45));
+  rect(0, 0, size);
+  pop();
 }

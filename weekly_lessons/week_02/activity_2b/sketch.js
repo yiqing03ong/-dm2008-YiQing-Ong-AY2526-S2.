@@ -1,31 +1,36 @@
-// DM2008 — Activity 2b [Guided]
-// Pattern Making (40 min)
-//
-// Use a for loop to draw a repeating row of shapes.
-// Add a condition to introduce variation — alternating color, size, or spacing.
-// Then add one interaction (mouse or key) that changes the rule.
-//
-// Stretch: try a second row, or turn your row into a 2D grid.
+let cols = 15;
+let rows = 15;
+let invert = false; 
 
 function setup() {
   createCanvas(400, 400);
 }
 
 function draw() {
-  background(240);
+  background(38, 60, 176);
 
-  for (let i = 0; i < width; i += 50) {
-    // % (modulo) alternates between 0 and non-zero — good for switching every other shape
-    if (mouseIsPressed) {
-      fill(255, 0, 0);
-    } else if (i % 100 == 0) {
-      fill(0);
-    } else {
-      fill(180);
+  for (let x = 0; x < cols; x++) {
+    for (let y = 0; y < rows; y++) {
+      let w = width / cols;
+      let h = height / rows;
+      
+      if (((x + y) % 3 == 0) !== invert) {
+        fill(random(161, 255), random(173, 255), random(235, 255));
+      } else {
+        fill(161, 173, 235);
+      }
+      
+      noStroke();
+      
+      if ((x + y) % 2 == 0) {
+        ellipse(x * w + w / 2, y * h + h / 2, w, h);
+      } else {
+        rect(x * w, y * h, w, h);
+      }
     }
-
-    // --- Your shape goes here ---
-    // Try swapping this out for your own rule.
-    ellipse(i + 25, height / 2, 40);
   }
+}
+
+function mousePressed() {
+  invert = !invert;
 }

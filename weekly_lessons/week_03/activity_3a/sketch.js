@@ -1,20 +1,5 @@
-// DM2008 — Activity 3a [Guided]
-// Array Sampler (20 min)
-//
-// An array stores a list of values — here it's colors, but it could be
-// sizes, positions, or anything else.
-// Press any key to cycle through the array one item at a time.
-//
-// Try these:
-// - Replace the colors with your own values (sizes, positions, text).
-// - Use mousePressed() instead of keyPressed().
-// - Use push() to add new items or splice() to remove them.
-// - Loop through the whole array to draw all items at once.
-//
-// Stretch: visualize all items in the array simultaneously instead of one at a time.
-
-let palette = ["#f06449", "#009988", "#3c78d8", "#ffeb3b"];
-let currentIndex = 0;
+let palette = ['#E49BA6', '#92487A', '#FA5C5C', '#f0cd5c'];
+let shapes = [];
 
 function setup() {
   createCanvas(400, 400);
@@ -22,21 +7,45 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(255, 236, 192, 15);
+  
+  for (let i = 0; i < shapes.length; i++) {
+    fill(shapes[i].col);
 
-  // Draw the ellipse using the current color in the array
-  fill(palette[currentIndex]);
-  ellipse(width / 2, height / 2, 200);
+    if (shapes[i].type === 'circle') {
+      ellipse(shapes[i].x, shapes[i].y, shapes[i].sz);
+    }
+
+    else if (shapes[i].type === 'square') {
+      rectMode(CENTER);
+      rect(shapes[i].x, shapes[i].y, shapes[i].sz, shapes[i].sz);
+    }
+
+    else if (shapes[i].type == 'triangle') {
+      let s = shapes[i].sz;
+      triangle(
+        shapes[i].x, shapes[i].y - s / 2,
+        shapes[i].x - s / 2, shapes[i].y + s / 2,
+        shapes[i].x + s / 2, shapes[i].y + s / 2
+      );
+    }
+  }
 }
 
-// Advance to the next color each time a key is pressed
+function mousePressed() {
+  let shapeTypes = ['circle', 'square', 'triangle'];
+  
+  shapes.push({
+    x: mouseX,
+    y: mouseY,
+    sz: random(20, 80),
+    col: random(palette),
+    type: random(shapeTypes)
+  });
+}
+
 function keyPressed() {
-  currentIndex++; // shorthand for currentIndex += 1
-
-  // Wrap back to the start when we reach the end
-  if (currentIndex >= palette.length) {
-    currentIndex = 0;
+  if (key == 'r') {
+    shapes.splice(0, 1); 
   }
-
-  console.log("Current index:", currentIndex, "→", palette[currentIndex]);
 }

@@ -1,19 +1,11 @@
-// DM2008 — Activity 3c [Guided]
-// Painting App (40 min)
-//
-// Each brush is its own function, stored in an array
-// Switching brushes is as simple as changing the index
-// Keys 1, 2, 3 switch brushes. C cycles color. + / - changes size. X clears.
-//
-// Stretch: add an eraser mode with E — paint using the background color instead.
+const palette = ['#F04995', '#0EC9B4', '#F07020', '#F1E95D', '#946ECE'];
 
-const palette = ["#f06449", "#009988", "#3c78d8", "#eeeeee"];
 let colorIndex = 0;
 let sizeVal = 20;
+let col; 
 
-// Storing brush functions in an array lets us switch between them with an index
-const brushes = [brushCircle, brushSquare, brushStreak];
-let currentBrush = 0;
+const brushes = [brushCircle, brushSquare, brushStreak, brushTriangle];
+let currentBrush = 0; 
 
 function setup() {
   createCanvas(600, 600);
@@ -22,25 +14,36 @@ function setup() {
 }
 
 function draw() {
-  if (mouseIsPressed) {
-    const col = palette[colorIndex];
+  if (keyIsDown(67) && colorIndex !== -1) {
+      colorIndex = (colorIndex + 0.02) % palette.length;
+    }
+
+    if (colorIndex === -1) {
+      col = color(240); 
+    } else {
+      col = palette[floor(colorIndex)];
+    }
+    
+    //mirroring
     brushes[currentBrush](mouseX, mouseY, col, sizeVal);
-  }
+    brushes[currentBrush](width - mouseX, mouseY, col, sizeVal);
 }
 
-// All brush functions share the same parameters (x, y, c, s)
-// That's what makes them interchangeable in the array
+// 3) Brush functions (students can customize/extend)
 function brushCircle(x, y, c, s) {
   noStroke();
   fill(c);
+  drawingContext.globalAlpha = 0.3;
   ellipse(x, y, s);
 }
 
 function brushSquare(x, y, c, s) {
   push();
   translate(x, y);
+  rotate(frameCount * 0.05);
   noStroke();
   fill(c);
+  drawingContext.globalAlpha = 0.3;
   rect(0, 0, s, s);
   pop();
 }
@@ -48,33 +51,49 @@ function brushSquare(x, y, c, s) {
 function brushStreak(x, y, c, s) {
   stroke(c);
   strokeWeight(max(2, s / 8));
-  point(x, y);
+  point(x,y);
 }
 
+function brushTriangle(x, y, c, s) {
+  noStroke();
+  fill(c); 
+  drawingContext.globalAlpha = 0.3;
+  push();
+  translate(x, y);
+  rotate(frameCount * 0.05);
+  triangle(0, -s, s, s, -s, s);
+  pop();
+}
+
+// 4) Brush UI: select brush, cycle color, change size, clear
 function keyPressed() {
   switch (key) {
-    case "1":
-      currentBrush = 0;
-      break; // circle
-    case "2":
-      currentBrush = 1;
-      break; // square
-    case "3":
-      currentBrush = 2;
-      break; // streak
+    case '1':
+      currentBrush = 0; // circle
+      break;
+    case '2':
+      currentBrush = 1; // square
+      break; 
+    case '3':
+      currentBrush = 2; // streak
+      break;
+    case '4':
+      currentBrush = 3; // triangle
+      break;
   }
-
-  if (key == "C" || key == "c") {
-    colorIndex = (colorIndex + 1) % palette.length;
+  if (key == 'C' || key == 'c') {
+    colorIndex = (colorIndex + 1) % palette.length; 
   }
-  if (key == "+" || key == "=") {
+  if (key == 'E'|| key == 'e') {
+    colorIndex = -1;
+  }
+  if (key == '+' || key == '=') {
     sizeVal += 4;
   }
-  if (key == "-" || key == "_") {
-    // look at reference to learn what max() does
+  if (key == '-' || key == '_') {
     sizeVal = max(4, sizeVal - 4);
-  }
-  if (key == "X" || key == "x") {
-    background(240);
-  }
+  } 
+  if (key == 'X' || key == 'x') {
+    background(240); 
+  } 
 }

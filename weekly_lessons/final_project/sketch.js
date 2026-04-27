@@ -1,27 +1,26 @@
 let stars = [];
-let connections = []; //[startStar, endStar]
-
-let draggedStar = null; //no star being dragged right now
-let startStar = null; //store star where a connection started 
+let draggedStar = null;
+let startStar = null;
+let connections = [];
 
 let clickColors = [
-  [255, 120, 120], //red
-  [120, 200, 255], //light blue
-  [180, 120, 255], //purple
-  [255, 220, 120], //yellow
-  [120, 255, 180] //aqua
+  [255, 120, 120],
+  [120, 200, 255],
+  [180, 120, 255],
+  [255, 220, 120],
+  [120, 255, 180]
 ];
+
+let minDist = Infinity;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-  //spawn 150 stars at setup
   for (let i = 0; i < 150; i++) {
     stars.push(new Star(random(width), random(height)));
   }
 }
 
-//detect whether mouse is on top of star 
 function getStarAt(x, y, ignoreStar = null) {
   for (let s of stars) {
     if (s !== ignoreStar && dist(x, y, s.x, s.y) < 6) {
@@ -57,15 +56,15 @@ function mouseReleased() {
   }
 
   let endStar = null;
-  let minDist = 999;
+  let maxDist = min(width, height) * 0.15; 
 
-  // find nearest star after release 
+  // find nearest star to release point
   for (let s of stars) {
     if (s === startStar) continue;
 
     let d = dist(mouseX, mouseY, s.x, s.y);
 
-    if (d < 80 && d < minDist) {
+    if (d < maxDist && d < minDist) {
       minDist = d;
       endStar = s;
     }
@@ -143,7 +142,7 @@ function draw() {
 }
 
 function keyPressed() {
-  if (keyCode === ESCAPE) {
+  if (key == 'q') {
     connections = [];
   }
 }

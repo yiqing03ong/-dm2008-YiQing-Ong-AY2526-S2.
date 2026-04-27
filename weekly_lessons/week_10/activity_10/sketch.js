@@ -1,66 +1,95 @@
-// DM2008 — Activity 10
-// Control Center (45 min)
-//
-// A generative sketch with a working control panel — extend it and make it your own.
-// By the end, your UI should change at least two visual variables in real time,
-// use at least two types of input, and feel intentional in layout and design.
-//
-// What's already here: a color button, a size slider, and a shape dropdown.
-// Ideas to extend: add a speed slider, a background color picker, an opacity control.
-//
-// Stretch: style your controls with .style() or CSS to match the feel of your sketch.
-
-let colorBtn, sizeSlider, shapeSelect;
+let colorBtn, sizeSlider, shapeSelect, patternSlider, resetBtn;
 let shapeColor;
 
 function setup() {
   createCanvas(640, 400);
   noStroke();
+  textFont("Helvetica, Arial, sans-serif");
 
-  shapeColor = color(random(255), random(255), random(255));
+  controlPanel = createDiv();
+  controlPanel.position(16, 16);
 
-  // Button: randomizes the shape color when clicked
-  colorBtn = createButton("Change Color");
-  colorBtn.position(16, 16);
-  colorBtn.mousePressed(randomShapeColor);
-
-  // Slider: controls shape size (range 20–220, starting at 100)
-  createP("Size").position(0, 50).style("margin", "4px 0 0 16px");
-  sizeSlider = createSlider(20, 220, 100, 1);
-  sizeSlider.position(15, 70);
-
-  // Dropdown: switches between shape types
-  createP("Shape").position(0, 100).style("margin", "8px 0 0 16px");
+  colorBtn = createButton('Random Color');
+  sizeSlider = createSlider(20, 120, 60, 1);
+  patternSlider = createSlider(1, 30, 8, 1);
   shapeSelect = createSelect();
-  shapeSelect.position(16, 130);
+
   shapeSelect.option("ellipse");
   shapeSelect.option("rect");
   shapeSelect.option("triangle");
+
+  colorBtn.parent(controlPanel);
+  sizeSlider.parent(controlPanel);
+  patternSlider.parent(controlPanel);
+  shapeSelect.parent(controlPanel);
+
+  colorBtn.position(10, 0);
+  sizeSlider.position(10, 50);
+  patternSlider.position(10, 80);
+  shapeSelect.position(10, 110);
+
+  colorBtn.mousePressed(randomShapeColor);
+
+  shapeColor = color(random(255), random(255), random(255));
+  
+  resetBtn = createButton('Reset');
+  resetBtn.parent(controlPanel);
+  resetBtn.position(10, 140);
+
+  resetBtn.mousePressed(resetAll);
+}
+
+function randomShapeColor() {
+  shapeColor = color(random(255), random(255), random(255));
+}
+
+function resetAll() {
+  sizeSlider.value(60);
+  patternSlider.value(8);
+  shapeSelect.value("ellipse");
+  
+  shapeColor = color(50);
 }
 
 function draw() {
   background(240);
 
+  let s = sizeSlider.value();
+  let count = patternSlider.value();
+  let choice = shapeSelect.value();
+
   push();
   translate(width * 0.65, height * 0.5);
 
-  let s = sizeSlider.value();
-  fill(shapeColor);
+  for (let i = 0; i < count; i++) {
+    push();
 
-  let choice = shapeSelect.value();
-  if (choice === "ellipse") {
-    ellipse(0, 0, s, s);
-  } else if (choice === "rect") {
-    rectMode(CENTER);
-    rect(0, 0, s, s);
-  } else if (choice === "triangle") {
-    triangle(-s * 0.6, s * 0.5, 0, -s * 0.6, s * 0.6, s * 0.5);
+    rotate(TWO_PI * i / count);
+    translate(0, -80);
+
+    fill(shapeColor);
+
+    if (choice === "ellipse") {
+      ellipse(0, 0, s, s);
+    } else if (choice === "rect") {
+      rectMode(CENTER);
+      rect(0, 0, s, s);
+    } else if (choice === "triangle") {
+      triangle(
+        -s * 0.6, s * 0.5,
+        0, -s * 0.6,
+        s * 0.6, s * 0.5
+      );
+    }
+
+    pop();
   }
 
   pop();
-}
 
-// Called when the color button is pressed
-function randomShapeColor() {
-  shapeColor = color(random(255), random(255), random(255));
+  fill(0);
+  textSize(14);
+  text("Size", 30, 62);
+  text("Pattern amount", 30, 92);
+  text("Shape", 30, 122);
 }
