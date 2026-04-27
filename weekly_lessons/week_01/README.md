@@ -1,5 +1,4 @@
-# Yi Qing's Repo
-DM2008- Programming for Interaction
+# Week 1
 
 ---
 
