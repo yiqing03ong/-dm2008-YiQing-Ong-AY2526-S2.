@@ -1,4 +1,9 @@
 # Final Project
+---
+
+| Folder | Focus |
+|---------|--------|
+| <a href="https://editor.p5js.org/yiqing03ong/sketches/kxVnw76br">final_project</a> |  Astronomer's Respite |
 
 ---
 
@@ -13,8 +18,6 @@ Initially, I hadn't thought about making this sketch out to have a use in drawin
 
 
 Link to pitch: https://canva.link/iy9ee2h1fma44zm  
-
-Link to sketch: https://editor.p5js.org/yiqing03ong/sketches/kxVnw76br
 
 ## ⏮️Previous Assignment⏮️
 [Last Week](../week_10/)
